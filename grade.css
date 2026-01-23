@@ -1,0 +1,145 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* ===== INPUT ===== */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== RESULT BOX ===== */
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.result-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 20px;
+  color: #007bff;
+  margin-left: 5px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input[type="number"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .result-box p {
+    font-size: 14px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .result {
+    font-size: 18px;
+  }
+}

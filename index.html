@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="grade.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>University Grade Calculator</h1>
+    <div class="form-group">
+      <label for="obt_marks">Enter Your Marks (out of 100):</label>
+      <input type="number" name="obt_marks" id="obt_marks" placeholder="e.g., 85" onchange="demo()">
+    </div>
+    <!-- <div class="form-group">
+      <label for="hig_marks">Enter Highest Marks (out of 100):</label>
+      <input type="number" name="tot_marks" id="hig_marks" placeholder="e.g., 100" onchange="demo2()">
+    </div> -->
+    <button onclick="grading()" id="result">Calculate Grade</button>
+    <div class="result-box">
+      <p>Your Grade is:<span class="result" id="value" >N/A</span></p>
+    </div>
+  </div>
+  <script src="grade.js"></script>
+</body>
+
+</html>
